@@ -17,7 +17,10 @@ app.get('/', function(req, res) {
 });
 
 app.get('/auth/google', function(req, res) {
-  res.render('zalogowany');
+  res.render('zalogowany', {
+    name: 'Johnny',
+    age: '20',
+  });
 });
 
 app.listen(3000);
